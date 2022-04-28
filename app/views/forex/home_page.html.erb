@@ -1,0 +1,13 @@
+<h1>Currency pairs</h1>
+
+<p>Go <a href="/">back</a>.</p>
+
+<ul>
+  <%= @array_of_symbols.each do |symb| %>
+    <li>
+      <a href="/forex/<%= symb %>">
+        Convert 1 <%= symb %> to...
+      </a>
+    </li>
+  <%end %>
+</ul>
